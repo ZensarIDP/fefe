@@ -1,19 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: efef
-  description: fefe
+  name: my-test-weather-app
   annotations:
-    github.com/project-slug: ZensarIDP/fefe
-    github.com/workflows: ci.yml
-    backstage.io/environments: 'dev,staging,prod'
-  tags:
-    - nodejs
-    - microservice
-    - cloud-run
-    - multi-environment
+    github.com/project-slug: ZensarIDP/my-test-weather-app
 spec:
-  type: service
-  lifecycle: experimental
-  owner: group:default/developers
-  system: efef-system
+  type: other
+  lifecycle: unknown
+  owner: developers
