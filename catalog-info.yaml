@@ -1,10 +1,16 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: my-test-weather-app
+  name: fefe
+  description: Fefe service component
   annotations:
-    github.com/project-slug: ZensarIDP/my-test-weather-app
+    github.com/project-slug: ZensarIDP/fefe
+    github.com/workflows: ci.yml
+  tags:
+    - nodejs
+    - microservice
 spec:
-  type: other
-  lifecycle: unknown
-  owner: developers
+  type: service
+  lifecycle: experimental
+  owner: group:default/developers
+  system: fefe-system
